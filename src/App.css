@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.25s ease-out;
+}
+
+.test {
+  color: red;
+}
+
+body {
+  background-color: #1a1d21;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+form {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.formInput input {
+  color: lightgray;
+  background-color: transparent;
+  border: 1px solid #555;
+  border-radius: 5px;
+  font-size: 15px;
+  outline: none;
+  padding: 15px 15px;
+  width: 100%;
+}
+
+input:focus {
+  border: 1px solid rgb(145, 145, 145);
+}
+
+input:required:valid {
+  background: rgb(154, 205, 50, 0.1);
+  border-color: yellowgreen;
+}
+
+.btn-add {
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 0 5px;
+  margin-left: 20px;
+}
+
+.btn-add i {
+  color: #3cb372;
+}
+
+.btn-add i:hover {
+  color: #2e8b57;
+}
+
+.todo li {
+  display: flex;
+  color: #d3d3d3;
+  list-style: none;
+  margin: 20px 0;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 15px 15px 15px 0;
+  justify-content: space-between;
+}
+
+.todo span {
+  margin: 0 10px 0 0;
+}
+
+.todo button {
+  background-color: transparent;
+  border: none;
+  color: #ff616e;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+i {
+  vertical-align: middle;
+}
+
+.deleteAll {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.deleteAll:hover {
+  background-color: #41323c;
+}
+
+.deleteAll i {
+  margin-right: 15px;
+}
+
+/*Custom Checkbox W3SCHOOLS*/
+
+/* Customize the label (the checkContainer) */
+.checkContainer {
+  position: relative;
+  padding-left: 45px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border: 1px solid #555555;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.checkContainer:hover input ~ .checkmark {
+  background-color: #555;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkContainer input:checked ~ .checkmark {
+  background-color: #555;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkContainer .checkmark:after {
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid lightgreen;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
