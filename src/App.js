@@ -29,7 +29,7 @@ function App() {
 
   const handleComplete = (index) => {
     const newTasks = [...tasks]
-    if(newTasks[index].completed === false) {
+    if (newTasks[index].completed === false) {
       newTasks[index].completed = true
     } else {
       newTasks[index].completed = false
@@ -50,8 +50,8 @@ function App() {
   return (
     <div className="App">
 
-      <Form formInput={formInput} handleChange={handleChange} handleSubmit={handleSubmit}/>
-      <Todo tasks={tasks} handleComplete={handleComplete} handleRemove={handleRemove} handleRemoveAll={handleRemoveAll}/>
+      <Form formInput={formInput} handleChange={handleChange} handleSubmit={handleSubmit} />
+      <Todo tasks={tasks} handleComplete={handleComplete} handleRemove={handleRemove} handleRemoveAll={handleRemoveAll} />
 
     </div>
   );

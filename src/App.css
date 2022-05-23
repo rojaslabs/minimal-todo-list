@@ -5,8 +5,8 @@
   transition: all 0.25s ease-out;
 }
 
-.test {
-  color: red;
+.App {
+  width: 500px;
 }
 
 body {
@@ -14,11 +14,11 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 50px;
 }
 
 form {
-  width: 600px;
   display: flex;
   justify-content: center;
 }
@@ -60,6 +60,11 @@ input:required:valid {
   color: #2e8b57;
 }
 
+.checkAndTask {
+  display: flex;
+  line-height: 25px;
+}
+
 .todo li {
   display: flex;
   color: #d3d3d3;
@@ -67,12 +72,8 @@ input:required:valid {
   margin: 20px 0;
   background-color: transparent;
   border-radius: 5px;
-  padding: 15px 15px 15px 0;
+  padding: 15px 10px 15px 0;
   justify-content: space-between;
-}
-
-.todo span {
-  margin: 0 10px 0 0;
 }
 
 .todo button {
